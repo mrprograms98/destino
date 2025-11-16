@@ -41,7 +41,20 @@
     <p data-key="contact-hero-subtitle">Wij staan klaar om uw bouwdromen te realiseren.</p>
   </div>
 </section>
+<form action="https://api.silentforms.com/submit" method="POST">
+  <input type="hidden" name="accessKey" value="bebb3f08b69d61ded1194ccdf78bc3cf0f72a118d9cee19d50ce25efa20c4c90">
 
+  <label>Naam</label><br>
+  <input type="text" name="name" required><br><br>
+
+  <label>Email</label><br>
+  <input type="email" name="email" required><br><br>
+
+  <label>Bericht</label><br>
+  <textarea name="message" required></textarea><br><br>
+
+  <button type="submit">Verstuur</button>
+</form>
 <!-- CONTACT FORM -->
 <section class="section bg-light">
 
@@ -129,6 +142,7 @@ function setLanguage(lang) {
 </body>
 
 </html>
+
 
 
 
