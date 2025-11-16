@@ -334,17 +334,7 @@ h2, h3, h4 {
     }
 }
 
-.logo h1 {
-    font-size: clamp(1.6rem, 3vw, 2.6rem);  /* schaal mooi mee */
-    font-weight: bold;
-    color: #7B4F33;
-    letter-spacing: 1px;
-    padding: 0.2rem 0.8rem;
-}
-
 .logo img {
-    box-shadow: 0 0 24px rgba(255,255,255,0.9);  /* witte glow */
-    border-radius: 8px;
     transition: transform 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
 }
 .logo img:hover {
@@ -1309,3 +1299,4 @@ p {
         padding-right: 0;
     }
 }
+
