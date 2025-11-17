@@ -413,6 +413,7 @@ h2, h3, h4 {
     position: relative;
     display: inline-block;
     margin: 0 15px;
+    white-space: nowrap;
 }
 
 .nav a:last-child {
@@ -1263,6 +1264,15 @@ footer .social i:hover {
         display: none;            /* hamburger verbergen op desktop */
     }
 }
+@media (max-width: 1200px) {
+    .nav a {
+        font-size: 0.9rem; /* kleiner */
+    }
+
+    .nav ul {
+        gap: 1rem; /* minder ruimte tussen knoppen */
+    }
+}
 
 /* ====== Mobiel (smal scherm) ====== */
 @media (max-width: 1024px) {
@@ -1304,4 +1314,5 @@ footer .social i:hover {
         padding-right: 0;
     }
 }
+
 
