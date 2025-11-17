@@ -1283,7 +1283,7 @@ footer .social i:hover {
 }
 
 /* ====== Mobiel (smal scherm) ====== */
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
     .nav ul {
         display: none;            /* standaard gesloten */
         flex-direction: column;
@@ -1326,6 +1326,7 @@ p {
         padding-right: 0;
     }
 }
+
 
 
 
