@@ -335,6 +335,38 @@ h2, h3, h4 {
         opacity: 1;
     }
 }
+/* Nav-knoppen */
+.header nav a {
+    position: relative;
+    display: inline-block;
+    margin: 0 15px;
+    padding: 10px 0;
+    color: #3b3b3b;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.header nav a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 0%;
+    height: 2px;
+    background: #a57c4c; /* chique goud/bruin */
+    border-radius: 2px;
+    transition: width 0.3s ease;
+}
+
+.header nav a:hover::after {
+    width: 50%; /* streepje wordt zichtbaar bij hover */
+}
+
+.header nav a:hover {
+    color: #a57c4c; /* optionele kleurverandering van tekst */
+}
 
 .logo img {
     transition: transform 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
@@ -1301,6 +1333,7 @@ p {
         padding-right: 0;
     }
 }
+
 
 
 
