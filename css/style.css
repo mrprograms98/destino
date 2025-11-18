@@ -1066,6 +1066,9 @@ textarea {
     font-weight: bold;
     text-decoration: none;
 }
+form {
+    width: 50%;
+}    
 .locatie-container {
   display: flex;
   flex-direction: column;
@@ -1314,5 +1317,6 @@ footer .social i:hover {
         padding-right: 0;
     }
 }
+
 
 
