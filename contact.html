@@ -42,6 +42,20 @@
   </div>
 </section>
 
+ <form name="contact" method="POST" data-netlify="true" netlify>
+  <input type="hidden" name="form-name" value="contact">
+  <label for="name">Naam:</label>
+  <input type="text" id="name" name="name" required>
+
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" required>
+
+  <label for="message">Bericht:</label>
+  <textarea id="message" name="message" required></textarea>
+
+  <button type="submit">Verstuur</button>
+</form>
+ 
 <section class="section bg-light">
 
   <!-- CONTACT INFO -->
@@ -128,6 +142,7 @@ function setLanguage(lang) {
 </body>
 
 </html>
+
 
 
 
