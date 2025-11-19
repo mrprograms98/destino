@@ -43,25 +43,16 @@
 </section>
  
  <!-- Contactformulier sectie -->
-<section id="contact">
-  <h2>Contact</h2>
-  <form action="https://silentform.io/api/send?key=bebb3f08b69d61ded1194ccdf78bc3cf0f72a118d9cee19d50ce25efa20c4c90" method="POST">
-    <div>
-      <label for="name">Naam</label>
-      <input type="text" id="name" name="name" placeholder="Jouw naam" required>
-    </div>
-    <div>
-      <label for="email">E-mail</label>
-      <input type="email" id="email" name="email" placeholder="Jouw e-mail" required>
-    </div>
-    <div>
-      <label for="message">Bericht</label>
-      <textarea id="message" name="message" placeholder="Schrijf je bericht hier…" required></textarea>
-    </div>
-    <!-- Optioneel: hidden veld voor redirect na verzenden -->
-    <input type="hidden" name="_redirect" value="https://mrprograms98.github.io/destino/bedankt.html">
-    <button type="submit">Verzenden</button>
-  </form>
+<section class="section">
+  <!-- modify this form HTML and place wherever you want your form -->
+<form action="https://formspree.io/f/mpwkzjky" method="POST">
+  <label> Your email:
+    <input type="email" name="email">
+  </label>
+  <label>Your message:<textarea name="message"></textarea> </label>
+  <!-- your other form fields go here -->
+  <button type="submit">Send</button>
+</form>
 </section>
  
 <section class="section bg-light">
@@ -150,6 +141,7 @@ function setLanguage(lang) {
 </body>
 
 </html>
+
 
 
 
