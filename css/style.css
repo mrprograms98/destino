@@ -1076,43 +1076,55 @@ textarea {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* subtiele schaduw */
 }
 
-/* Stijl input en textarea voor stevigheid en mooi uiterlijk */
-.contact-form input,
-.contact-form textarea {
-  width: 100%;
-  padding: 1rem;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  font-family: 'Helvetica', sans-serif;
-  font-size: 1rem;
-  transition: border-color 0.3s, box-shadow 0.3s;
+/* =========================
+   FIX CONTACT SECTION RESPONSIVE
+========================= */
+
+/* Contact info: telefoon – e-mail – kaart */
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
 }
 
-.contact-form input:focus,
-.contact-form textarea:focus {
-  outline: none;
-  border-color: #5C3A21;
-  box-shadow: 0 0 8px rgba(92, 58, 33, 0.3);
+/* Elk blok binnen de contact-info */
+.contact-info div {
+    flex: 1 1 250px; /* zorgt dat items NIET te smal worden */
 }
 
-/* Style button binnen formulier indien nodig */
-.contact-form button {
-  margin-top: 1rem;
-  font-family: 'Helvetica', sans-serif;
-  font-weight: 600;
-  font-size: 1rem;
-  padding: 0.75rem 2rem;
-  border-radius: 5px;
-  border: none;
-  background-color: #5C3A21;
-  color: #fff;
-  cursor: pointer;
-  transition: background-color 0.3s;
+/* Telefoonnummer horizontaal houden */
+.contact-info a,
+.contact-info p {
+    white-space: nowrap; /* voorkomt dat tekst breekt over meerdere regels */
 }
 
-.contact-form button:hover {
-  background-color: #7b4f33;
-}   
+/* FORMULIER RESPONSIVE FIX */
+.contact-form {
+    width: 100%;
+    max-width: 500px;  /* voorkomt te breed worden */
+    margin: 0 auto;    /* centreert op mobiel */
+}
+
+/* Extra mobiele optimalisatie */
+@media (max-width: 600px) {
+
+    .contact-info {
+        flex-direction: column; /* onder elkaar maar WEL netjes */
+        text-align: center;
+    }
+
+    .contact-info div {
+        width: 100%;
+    }
+
+    .contact-form {
+        width: 90vw;     /* formulier past perfect binnen mobiel scherm */
+    }
+}
+
 .locatie-container {
   display: flex;
   flex-direction: column;
@@ -1196,7 +1208,7 @@ textarea {
 
 /* ===== Responsive ===== */
 @media (max-width: 480px) {
-  .locatie-container .contact-form{
+  .locatie-container{
     max-width: 95%;
   }
 }
@@ -1204,14 +1216,14 @@ textarea {
 
 /* ===== Responsive ===== */
 @media (max-width: 480px) {
-  .locatie-kaartbox .contact-form{
+  .locatie-kaartbox{
     width: 100%;
     max-width: 95%;
   }
 }
 /* ===== Responsive ===== */
 @media (max-width: 480px) {
-  .locatie-kaartbox .contact-form{
+  .locatie-kaartbox{
     width: 100%;
     max-width: 95%;
   }
@@ -1220,7 +1232,7 @@ textarea {
 
 /* ===== Responsive ===== */
 @media (max-width: 900px) {
-  .locatie-container .contact-form{
+  .locatie-container{
     grid-template-columns: 1fr;
   }
 }
@@ -1361,6 +1373,7 @@ footer .social i:hover {
         padding-right: 0;
     }
 }
+
 
 
 
