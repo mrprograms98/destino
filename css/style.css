@@ -1196,7 +1196,7 @@ textarea {
 
 /* ===== Responsive ===== */
 @media (max-width: 480px) {
-  .locatie-container {
+  .locatie-container .contact-form{
     max-width: 95%;
   }
 }
@@ -1204,14 +1204,14 @@ textarea {
 
 /* ===== Responsive ===== */
 @media (max-width: 480px) {
-  .locatie-kaartbox {
+  .locatie-kaartbox .contact-form{
     width: 100%;
     max-width: 95%;
   }
 }
 /* ===== Responsive ===== */
 @media (max-width: 480px) {
-  .locatie-kaartbox {
+  .locatie-kaartbox .contact-form{
     width: 100%;
     max-width: 95%;
   }
@@ -1220,7 +1220,7 @@ textarea {
 
 /* ===== Responsive ===== */
 @media (max-width: 900px) {
-  .locatie-container {
+  .locatie-container .contact-form{
     grid-template-columns: 1fr;
   }
 }
@@ -1361,6 +1361,7 @@ footer .social i:hover {
         padding-right: 0;
     }
 }
+
 
 
 
