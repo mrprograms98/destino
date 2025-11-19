@@ -1066,9 +1066,53 @@ textarea {
     font-weight: bold;
     text-decoration: none;
 }
-form {
-    width: 50%;
-}    
+/* Formulier centreren en stylen */
+.contact-form {
+  max-width: 500px; /* maximale breedte */
+  margin: 0 auto; /* horizontale centrering */
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.8); /* lichte achtergrond */
+  border-radius: 10px; /* afgeronde hoeken */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* subtiele schaduw */
+}
+
+/* Stijl input en textarea voor stevigheid en mooi uiterlijk */
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-family: 'Helvetica', sans-serif;
+  font-size: 1rem;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #5C3A21;
+  box-shadow: 0 0 8px rgba(92, 58, 33, 0.3);
+}
+
+/* Style button binnen formulier indien nodig */
+.contact-form button {
+  margin-top: 1rem;
+  font-family: 'Helvetica', sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.75rem 2rem;
+  border-radius: 5px;
+  border: none;
+  background-color: #5C3A21;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #7b4f33;
+}   
 .locatie-container {
   display: flex;
   flex-direction: column;
@@ -1317,6 +1361,7 @@ footer .social i:hover {
         padding-right: 0;
     }
 }
+
 
 
 
