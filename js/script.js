@@ -1,4 +1,8 @@
-
+window.addEventListener("load", function() {
+        setTimeout(() => {
+            document.querySelector(".preloader").classList.add("fade-out");
+        }, 2200);
+    });
 document.addEventListener('DOMContentLoaded', () => {
   // --- CORE VARIABLES (één bron van waarheid) ---
   const slides = Array.from(document.querySelectorAll('.bg-slide'));
@@ -149,4 +153,5 @@ function enableUI() {
     });
   }
 }
+
 
